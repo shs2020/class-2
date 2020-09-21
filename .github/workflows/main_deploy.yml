@@ -35,5 +35,5 @@ jobs:
     - name: install surge
       run: npn install -g surge
     - name: deploy
-      run: ./build p3.surge.sh token ${{secrets.SURGE_token}}          
+      run: ./build project003.surge.sh token ${{secrets.SURGE_token}}          
    
