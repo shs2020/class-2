@@ -26,14 +26,14 @@ jobs:
       with:
         node-version: 12 
         
-     - uses: bolares/action-yarn@2.0.0
-       with:
-         cmd: install
-     - name: install react
-       run: yarn build
+    - uses: bolares/action-yarn@2.0.0
+      with:
+        cmd: install
+    - name: install react
+      run: yarn build
        
-     - name: install surge
-       run: npn install -g surge
-     - name: deploy
-       run: ./build p3.surge.sh token ${{secrets.SURGE_token}}          
+    - name: install surge
+      run: npn install -g surge
+    - name: deploy
+      run: ./build p3.surge.sh token ${{secrets.SURGE_token}}          
    
